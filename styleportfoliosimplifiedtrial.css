@@ -1,0 +1,140 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: borderbox;
+}
+
+@font-face{
+font-family:'Movement';
+  src:url('./Fonts/Movement-DirectThin.woff2') format('woff2'),
+      url('./Fonts/Movement-DirectThin.woff') format('woff');
+      }
+      
+html {
+height: 100%;
+
+}
+
+body {
+}
+
+img {
+  width:100%;
+  height: auto;
+  display:block;
+}
+
+
+h1 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: right; 
+  float:right;	
+  padding-right: 5px;
+  font-size: 25px;
+}
+
+h1:hover {
+	color: #EC6E60;
+}
+
+.navigation {
+	position:absolute;
+}
+
+.topSection {
+	position:fixed;
+	width:99%;
+	padding: 5px;
+}
+
+h2 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000;
+}
+
+h2:hover {
+	color: #EC6E60;
+}
+
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+ 
+  
+  
+  
+  
+}
+
+
+.coverImage {
+		width: 25%;
+		position:absolute;
+		display: none;
+}
+	
+.expandedProject {
+	display:none
+}
+
+
+
+.otherImage {
+	display: block;
+	width:25%
+	}
+
+.projectText {
+  display:block;
+  width: 20%;
+  position:fixed;
+  top: 70px;
+  padding: 5px;
+
+}
+
+.about {
+	width:50%;
+	position:absolute;
+	z-Index:2;
+	
+}
+
+.projectTitle {
+	position: fixed;
+	bottom: 0px;
+	padding: 5px;
+}
+
+#aboutText {
+	display:none;
+	width: 20%;
+  position:fixed;
+  top: 70px;
+  padding: 5px;
+}
+
+#aboutImage {
+	max-width:400px;
+	display: none;
+	position:absolute;
+}
+
+
