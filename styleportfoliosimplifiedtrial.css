@@ -3,27 +3,20 @@ margin: 0;
 padding: 0;
 box-sizing: borderbox;
 }
-
-@font-face{
-font-family:'Movement';
-  src:url('./Fonts/Movement-DirectThin.woff2') format('woff2'),
-      url('./Fonts/Movement-DirectThin.woff') format('woff');
-      }
       
 html {
 height: 100%;
-
-}
-
-body {
 }
 
 img {
   width:100%;
-  height: auto;
+  height:auto;
   display:block;
 }
 
+img:hover {
+	cursor:pointer;
+}
 
 h1 {
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -38,8 +31,17 @@ h1 {
 
 h1:hover {
 	color: #EC6E60;
+	cursor:pointer;
 }
 
+a {
+	color: #000;
+	text-decoration:none; 
+}
+
+a:hover {
+ 	color: #EC6E60;
+}
 .navigation {
 	position:absolute;
 }
@@ -61,6 +63,7 @@ h2 {
 
 h2:hover {
 	color: #EC6E60;
+	cursor: pointer;
 }
 
 h3 {
@@ -76,13 +79,7 @@ p {
   font-weight: 500;
   font-style: normal;
   font-size: 15px;
- 
-  
-  
-  
-  
 }
-
 
 .coverImage {
 		width: 25%;
@@ -94,8 +91,6 @@ p {
 	display:none
 }
 
-
-
 .otherImage {
 	display: block;
 	width:25%
@@ -105,13 +100,13 @@ p {
   display:block;
   width: 20%;
   position:fixed;
-  top: 70px;
+  top: 32px;
   padding: 5px;
 
 }
 
 .about {
-	width:50%;
+	width:100%;
 	position:absolute;
 	z-Index:2;
 	
@@ -126,9 +121,9 @@ p {
 #aboutText {
 	display:none;
 	width: 20%;
-  position:fixed;
-  top: 70px;
-  padding: 5px;
+  	position:fixed;
+  	top: 70px;
+  	padding: 5px;
 }
 
 #aboutImage {
@@ -136,5 +131,7 @@ p {
 	display: none;
 	position:absolute;
 }
+
+
 
 

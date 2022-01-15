@@ -2,10 +2,11 @@
 
 
 let coverImages=document.getElementsByClassName('coverImage');
-let otherImages=document.getElementsByClassName('otherImage')
+let otherImages=document.getElementsByClassName('otherImage');
 
 //SCRAMBLING PROJECTS BEGINNING
-let startButton=document.getElementById('start')
+let startButton=document.getElementById('start');
+let myName=document.getElementById("name");
 	
 let scramble = function(event){
 
@@ -22,7 +23,7 @@ let scramble = function(event){
     for (let i=0; i< coverImages.length; i++){
 	    coverImages[i].style.display= 'block';
 	    coverImages[i].style.position='absolute';
-	    coverImages[i].style.top=Math.floor(Math.random()* (75 - 0 + 1) + 0)+'%';
+	    coverImages[i].style.top=Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
 	    coverImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
 	    coverImages[i].style.opacity='1';
 	    
@@ -36,6 +37,7 @@ let scramble = function(event){
 
 
 startButton.addEventListener('click',scramble);
+myName.addEventListener('click',scramble);
 
 
 //PUT ABOUT CARD ON RANDOM SPOT
@@ -47,7 +49,7 @@ let show = function(event){
 	
 	aboutCard.style.display = 'block';
 	aboutCard.style.position='absolute';
-	aboutCard.style.top=Math.floor(Math.random()* (80 - 0 + 1) + 0)+'%';
+	aboutCard.style.top=Math.floor(Math.random()* (100 - 0 + 1) + 0)+'%';
 	aboutCard.style.left=Math.floor(Math.random()* (80 - 25 + 1) + 25)+'%';
 	
 	document.getElementById('aboutText').style.display='block';
@@ -71,8 +73,8 @@ let show = function(event){
 
 }
 
-let aboutButton = document.getElementById('aboutButton');
-aboutButton.addEventListener('click',show);
+
+myName.addEventListener('click',show);
 	
 	
 
@@ -103,7 +105,7 @@ let expand= function(event) {
 	  	//scramble positions of all other images
 	  	for(let i=0;i<otherImages.length;i++){
 			otherImages[i].style.position='absolute';
-			otherImages[i].style.top= Math.floor(Math.random()* (75 - 0 + 1) + 0)+'%';
+			otherImages[i].style.top= Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
 			otherImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
 			otherImages[i].style.zIndex='1';
 		}
@@ -137,7 +139,7 @@ let scrambleOtherImages = function (event) {
 	//scramble positions of all other images
 	  	for(let i=0;i<otherImages.length;i++){
 			otherImages[i].style.position='absolute';
-			otherImages[i].style.top= Math.floor(Math.random()* (75 - 0 + 1) + 0)+'%';
+			otherImages[i].style.top= Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
 			otherImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
 			otherImages[i].style.zIndex='1';
 		}
