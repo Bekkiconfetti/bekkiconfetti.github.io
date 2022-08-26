@@ -1,5 +1,10 @@
 //document.body.style.backgroundColor = 'aqua';
 
+/*//SENDING EVERYTHING TO MOBILE RN
+if(screen.width <= 2000){
+	window.location.href = "./Projects.html";
+}
+*/
 
 let coverImages=document.getElementsByClassName('coverImage');
 let otherImages=document.getElementsByClassName('otherImage');
@@ -7,32 +12,32 @@ let otherImages=document.getElementsByClassName('otherImage');
 //SCRAMBLING PROJECTS BEGINNING
 let startButton=document.getElementById('start');
 let myName=document.getElementById("name");
-	
+
 let scramble = function(event){
 
 	//other images background, hide text
-	
+
 	let expandedProjects = document.getElementsByClassName('expandedProject');
-	
+
 	for (i=0; i<expandedProjects.length ; i++) {
 		expandedProjects[i].style.display='none';
 	}
-	
-	//SCRAMBLE	
+
+	//SCRAMBLE
 
     for (let i=0; i< coverImages.length; i++){
 	    coverImages[i].style.display= 'block';
 	    coverImages[i].style.position='absolute';
-	    coverImages[i].style.top=Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
+	    coverImages[i].style.top=Math.floor(Math.random()* (150 - 8 + 1) + 8)+'%';
 	    coverImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
 	    coverImages[i].style.opacity='1';
-	    
+
 	}
-	
+
 	//LET ABOUT CARD DISAPPEAR IF DISPLAYED
 	  document.getElementById('aboutImage').style.display ='none';
 	  document.getElementById('aboutText').style.display ='none';
-	
+
 }
 
 
@@ -44,39 +49,39 @@ myName.addEventListener('click',scramble);
 
 
 let show = function(event){
-   	
+
 	let aboutCard=document.getElementById('aboutImage');
-	
+
 	aboutCard.style.display = 'block';
 	aboutCard.style.position='absolute';
-	aboutCard.style.top=Math.floor(Math.random()* (100 - 0 + 1) + 0)+'%';
-	aboutCard.style.left=Math.floor(Math.random()* (80 - 25 + 1) + 25)+'%';
-	
+	aboutCard.style.top=Math.floor(Math.random()* (300 - 8 + 1) + 8)+'%';
+	aboutCard.style.left=Math.floor(Math.random()* (60 - 25 + 1) + 25)+'%';
+
 	document.getElementById('aboutText').style.display='block';
-	
+
 	//other images background, hide text
-	
+
 	let expandedProjects = document.getElementsByClassName('expandedProject');
-	
+
 	for (i=0; i<expandedProjects.length ; i++) {
 		expandedProjects[i].style.display='none';
 	}
-	
-	for (let i=0; i<coverImages.length; i++){
-	coverImages[i].style.opacity='0.5';
-	}
-	
-	
-	
 
-	
+	for (let i=0; i<coverImages.length; i++){
+	coverImages[i].style.opacity='0';
+	}
+
+
+
+
+
 
 }
 
 
 myName.addEventListener('click',show);
-	
-	
+
+
 
 
 
@@ -89,42 +94,42 @@ let expand= function(event) {
 	//HIDE OTHER EXPANDED PROJECTS
 
 		let expandedProjects=document.getElementsByClassName('expandedProject')
-	
+
 		for(let i=0; i<expandedProjects.length; i++) {
 		expandedProjects[i].style.display= 'none';
 		}
-	
-	
+
+
 	//LET ABOUT CARD DISAPPEAR IF DISPLAYED
 	  document.getElementById('aboutImage').style.display ='none';
 	  document.getElementById('aboutText').style.display ='none';
-	  
-	  
+
+
 	//EXPAND PROJECT
-	  
+
 	  	//scramble positions of all other images
 	  	for(let i=0;i<otherImages.length;i++){
 			otherImages[i].style.position='absolute';
-			otherImages[i].style.top= Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
+			otherImages[i].style.top= Math.floor(Math.random()* (100 - 8 + 1) + 8)+'%';
 			otherImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
 			otherImages[i].style.zIndex='1';
 		}
 		//show other images of projects
 		event.target.nextElementSibling.style.display ='block';
-	
-	  
-	  
-	  
+
+
+
+
 	//COME TO FRONT
-	
+
 		for( let i=0; i<coverImages.length;i++) {
 			coverImages[i].style.zIndex='0';
-			coverImages[i].style.opacity='0.5';
+			coverImages[i].style.opacity='0';
 		}
-	
+
 		event.target.style.zIndex='1';
 		event.target.style.opacity='1';
-	
+
 }
 
 for(let i=0; i<coverImages.length; i++) {
@@ -135,16 +140,16 @@ for(let i=0; i<coverImages.length; i++) {
 //CLICK ON OTHER IMAGES TO RESCRAMBLE
 
 let scrambleOtherImages = function (event) {
-	
+
 	//scramble positions of all other images
 	  	for(let i=0;i<otherImages.length;i++){
 			otherImages[i].style.position='absolute';
-			otherImages[i].style.top= Math.floor(Math.random()* (200 - 0 + 1) + 0)+'%';
-			otherImages[i].style.left=Math.floor(Math.random()* (75 - 20 + 1) + 20)+'%';
+			otherImages[i].style.top= Math.floor(Math.random()* (100 - 0 + 1) + 0)+'%';
+			otherImages[i].style.left=Math.floor(Math.random()* (77 - 20 + 1) + 20)+'%';
 			otherImages[i].style.zIndex='1';
 		}
-	
-	
+
+
 }
 
 for(let i=0; i<otherImages.length; i++) {
@@ -155,11 +160,43 @@ for(let i=0; i<otherImages.length; i++) {
 
 
 
+//MAKE MOBILE VERSION
+
+
+
+/*
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+       for (let i=0; i< coverImages.length; i++){
+
+	    coverImages[i].style.position='absolute';
+	    coverImages[i].style.width='100%';
+
+	}
+
+  } else {
+    document.body.style.backgroundColor = "pink";
+           for (let i=0; i< coverImages.length; i++){
+
+	    coverImages[i].style.position='absolute';
+	    coverImages[i].style.width='25%';
+
+	}
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+*/
 
 /*
 let loopCheck = document.createElement('p');
 	loopCheck.innerHTML=coverImages.length;
 	document.body.appendChild(loopCheck);
-	
+
 
 */
