@@ -8,15 +8,10 @@ html {
 height: 100%;
 }
 
-@media only screen and (orientation: portrait) {
-  body {
-   background-color: lightblue;*/
-    }
 
-  .coverImage {
-		width: 100%;
-		}
-
+}
+.about{
+  height 100%;
 }
 
 img {
@@ -35,10 +30,7 @@ h1 {
   font-style: normal;
   text-transform: uppercase;
   text-align: right;
-  float:right;
-  padding-right: 5px;
-  font-size: 25px;
-  clear: right;
+  line-height: 1em;
 }
 
 h1:hover {
@@ -49,34 +41,23 @@ h1:hover {
 a {
 	color: #000;
 	text-decoration:none;
+  line-height: 1em;
 }
+
+
 
 a:hover {
  	color: #EC6E60;
 }
-.navigation {
-	position:absolute;
-}
 
-.topSection {
-	position:fixed;
-	width:99%;
-	padding: 5px;
-}
 
 h2 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 25px;
   color: #000;
-  text-align: right;
-  float:right;
-  padding-right: 5px;
-  display: block;
-  clear: right;
-
+  text-align: left;
 }
 
 h2:hover {
@@ -97,56 +78,29 @@ p {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 15px;
-}
-
-.coverImage {
-		width: 25%;
-		position:absolute;
-		display: none;
-}
-
-.expandedProject {
-	display:none
-}
-
-.otherImage {
-	display: block;
-	width:25%
-	}
-
-.projectText {
-  display:block;
-  width: 20%;
-  position:fixed;
-  top: 32px;
-  padding: 5px;
 
 }
 
-.about {
-	width:100%;
-	position:absolute;
-	z-Index:2;
-
+.navText{
+  text-align: right !important;
 }
 
-.projectTitle {
-	position: fixed;
-	bottom: 0px;
-	padding: 5px;
+.otherImage{
+  max-width:400px;
+  display:none;
 }
 
-#aboutText {
-	display:none;
-	width: 20%;
-  	position:fixed;
-  	top: 70px;
-  	padding: 5px;
+.coverImage{
+  max-width:400px;
+  display:none;
 }
-
 #aboutImage {
 	max-width:400px;
-	display: none;
-	position:absolute;
+  display:none;
+
+}
+
+#spacing {
+  display:none;
+  height: 20%;
 }
