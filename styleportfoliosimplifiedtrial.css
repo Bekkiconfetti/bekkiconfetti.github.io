@@ -8,12 +8,6 @@ html {
 height: 100%;
 }
 
-
-}
-.about{
-  height 100%;
-}
-
 img {
   width:100%;
   height:auto;
@@ -24,30 +18,14 @@ img:hover {
 	cursor:pointer;
 }
 
-h1 {
-  font-family: neue-haas-grotesk-display, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: uppercase;
-  text-align: right;
-  line-height: 1em;
-}
-
-h1:hover {
-	color: #EC6E60;
-	cursor:pointer;
-}
-
 a {
-	color: #000;
+	color: #000000;
 	text-decoration:none;
-  line-height: 1em;
+
 }
-
-
 
 a:hover {
- 	color: #EC6E60;
+ 	color: #0000FF;
 }
 
 
@@ -58,26 +36,22 @@ h2 {
   text-transform: uppercase;
   color: #000;
   text-align: left;
+  line-height: 1.5rem;
+  color: #000000;
 }
 
 h2:hover {
-	color: #EC6E60;
+	color: #0000FF;
 	cursor: pointer;
-}
-
-h3 {
-  font-family: neue-haas-grotesk-display, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 25px;
-
 }
 
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #000000;
+  font-size:0.9rem;
+  
 
 }
 
@@ -94,10 +68,8 @@ p {
   max-width:400px;
   display:none;
 }
-#aboutImage {
-	max-width:400px;
-  display:none;
-
+.writingImage{
+  width:90%;
 }
 
 #spacing {
