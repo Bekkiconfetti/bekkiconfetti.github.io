@@ -1,0 +1,137 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: borderbox;
+}
+
+html {
+height: 100%;
+}
+
+  body {
+   background-color: blue;*/
+    }
+
+.memberImages{
+  width:100%;
+}
+
+.backgroundVid {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right:0;
+  bottom:0;
+  z-index: -1;
+  display: block;
+}
+
+.backgroundImage {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right:0;
+  bottom:0;
+  z-index: -1;
+  display: none;
+}
+
+
+
+p {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: white;
+  text-indent: 2rem;
+
+}
+
+.community{
+  text-indent:0;
+}
+
+
+h1 {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+
+  color: white;
+}
+
+.navigationText{
+  font-family: montserrat, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: blue;
+  text-indent:0;
+
+}
+
+h2 {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  color: white;
+}
+
+
+
+a {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  text-decoration: none;
+  color: blue;
+
+}
+a:hover {
+	color: blue;
+	cursor:pointer;
+  font-weight: bold;
+}
+
+.firstRow {
+
+
+}
+
+.footerRow {
+  height: 20px;
+  background-color: red;
+}
+
+.navbar-text {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+
+  color: blue;
+}
+.navbar{
+  height: 60px;
+}
+
+
+.memberVideo{
+
+  display: block;
+}
+
+#fullInterview {
+  display: none;
+}

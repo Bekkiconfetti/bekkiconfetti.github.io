@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "ApfelGrotezk";
+  src: url("../Fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff2") format("woff2"),
+       url("../Fonts/ApfelGrotezk/ApfelGrotezk-Regular.woff") format("woff");
+}
+
+.ApfelGrotezk {
+  font-family: ApfelGrotezk;
+}
+
+
+
+.buttons {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: white;
+  font-size:2rem;
+  text-align:center;
+}
+
+.btn {
+  background-color: #B3B3B3;
+  font-family: 'Montserrat';
+  border-width:0;
+  border-radius:15px;
+  color:#F2F2F2;
+  display:block;
+
+
+
+}
+
+.smallElementsLight{
+  font-family: 'Montserrat';
+  font-weight: regular;
+  color: #666666;
+  font-size:0.9rem;
+}
+
+.smallElementsDark{
+  font-family: 'Montserrat';
+  font-weight: regular;
+  color: white;
+  font-size:0.9rem;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-weight: regular;
+  font-size: 1rem;
+}
+
+.textLight{
+  color: #666666;
+  text-indent:25px;
+}
+
+.textDark{
+  color: white;
+}
+
+.textInactive{
+  color: #B3B3B3;
+}
+
+
+
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight:bold;
+
+}
+
+h2{
+  font-family: 'Montserrat';
+  font-weight:bold;
+  font-size:1.5rem;
+  color:#B3B3B3;
+}
+
+hr {
+  border-bottom:0.3rem solid #B3B3B3;
+}
+
+.headingLight {
+  color: #666666;
+  font-size: 4rem;
+}
+
+.headingDark{
+  color: #ffffff;
+  font-size: 4rem;
+
+}
+.white {
+  color: #ffffff;
+  opacity:1;
+}
+
+
+
+.right {
+  text-align: right;
+}
+
+body {
+	height: 100vh;
+  background-color: blue;
+  margin:20px;
+}
+
+.example-parent {
+}
+
+.example-origin {
+}
+
+.example-draggable {
+  color: #ffffff;
+  background-color:;
+  font-weight: normal;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  padding: 5px;
+}
+
+.example-dropzone {
+  background-color: #ffffff;
+  padding: 10px;
+  border-width:0px;
+  border-radius:15px;
+}
+
+table td {
+  vertical-align:top;
+
+}
+
+table th {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1rem;
+  color:white;
+  margin: 5px;
+  width: 20%;
+}

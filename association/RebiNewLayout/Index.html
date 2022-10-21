@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dado</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type ="text/css" href="CSS/Index.css">
+        <link rel="stylesheet" href="https://use.typekit.net/spr3tvr.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="JS/Index.js"></script>
+
+        <div class="container-fluid">
+            <div class="row justify-content-between logorow">
+                  <div class=" d-none d-lg-block col-sm-6 col-md-3 col-lg-1 col-xxl-1">
+                    <a href="../index.html">
+                    <img class="img-fluid" alt="Responsive image" src="img\logoTransparentWhite1.png">
+                    </a>
+                  </div>
+
+                  <div class=" col-sm-6 col-md-3 col-lg-1 col-xxl-1">
+                    <a href="../index.html">
+                    <img class="img-fluid rounded float-right" alt="Responsive image" src="img\logoTransparentWhite2.png">
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+
+    </head>
+
+    <body>
+
+      <!-- SECTION 0 -->
+            <div class="row justify-content-center" id="section-0">
+
+              <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5" style="background-color: #E6E6E6; border-radius:15px;">
+              <h1 class="p-2 headingLight mb-2 pb-3">A Dado as your agent</h1>
+
+              <div class="col-sm-12">
+
+                    <p class="textLight">
+                      Imagine you're a pop star and you don't want to discuss ticket prices for the next concert because you are busy writing that life-changing ballade, that will be the anthem of a generation.
+                      <br>  <strong> What do you do? You hire an agent to handle things for you! </strong>
+                   </p>
+
+                    <p class="textLight">
+                      Your dado is like your automatic agent, who represents you in the digital realm - only in most cases, you haven't really discussed your interests or given them any guidelines on how you would like them to do this. That's what this agency agreement is for. So next time when your dado is interacting with your bank, your health insurance, tinder date, or dry cleaner on your behalf, they'll know what details they have permission to share and what you would like to keep private.
+                    </p>
+
+
+
+                </div>
+
+                    <div class="right p-3">
+                      <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection1();"> <span class="buttons"> Next </span> </button>
+                    </div>
+                    <div class=" d-md-block d-sm-block d-none d-lg-none" style="">
+                      <p class="smallElementsLight"> Just a quick heads up - if you continue this process on this i-pad you will not be able to save your contract at the end. Switch over to the i-mac if you'd like to keep it for later!
+                      </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+      <!-- SECTION 1 -->
+            <div class="row" id="section-1" style="visibility:hidden;">
+
+              <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5">
+
+                    <div class="pb-3">
+
+                          <h1 class=" headingDark">
+                            1. <span style="opacity:0.5;"> 2. 3. 4. 5. </span>
+                          </h1>
+                          <h1 class=" px-0 py-2 headingDark">
+                            What would you like your Dado to do?
+                          </h1>
+                    </div>
+
+                    <div class="pb-5">
+
+                          <p class="textDark">What interests do you want them to pursue on your behalf? Is protecting your privacy the most important? Are there specific digital spaces you want to explore? What are your interests here? <strong>Your answers will form your statement of objectives.</strong>
+                          </p>
+                          <p class="textDark">
+                            This is a set of general guidelines that your Dado can start to work with. Don't worry, you will have the chance to adjust all the specifics later on.
+                          </p>
+                    </div>
+
+                    <div class="right p-3">
+                      <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection2();"> <span class="buttons"> Next </span> </button>
+                    </div>
+                  </div>
+
+            </div>
+
+      <!-- SECTION 2 -->
+      <div class="example-parent row justify-content-center" id="section-2" style="visibility:hidden;">
+
+        <div class="col-sm-11 col-lg-5  p-5">
+
+              <div class="pb-3">
+
+                    <h1 class=" headingDark">
+                      1. <span style="opacity:0.5;"> 2. 3. 4. 5. </span>
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      What would you like your Dado to do?
+                    </h1>
+                    <p class="textDark px-2"> Drag and drop anything that matches your interests into the white field.
+                    </p>
+              </div>
+
+
+
+
+        <div class="row">
+
+
+              <div class="example-origin col-6 ">
+
+                <div id="keep an eye on my general health"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsLight p-1" style="border: 0px; border-radius:15px; background-color:#F2F2F2; text-align: center;"> <span class="m-3 "> keep an eye on my general health</span></span>
+                </div>
+                <div id="open to experiment"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#8C2B2B; text-align: center;"> <span class="m-3 "> open to experiment</span></span>
+                </div>
+                <div id="monitor specific medical symptons"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#00268A; text-align: center;"> <span class="m-3 "> monitor specific medical symptoms</span></span>
+                </div>
+                <div id="engage in business transactions"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#9DD4E0; text-align: center;"> <span class="m-3 ">engage in business transactions </span></span>
+                </div>
+                <div id="protect my privacy"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsLight p-1" style="border: 0px; border-radius:15px; background-color:#F2F2F2; text-align: center;"> <span class="m-3 "> protect my privacy </span> </span>
+                </div>
+                <div id="keep anonymous"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsLight p-1" style="border: 0px; border-radius:15px; background-color:#F2F2F2; text-align: center;"> <span class="m-3 "> keep anonymous</span></span>
+                </div>
+                <div id="meet new people"  class="example-draggable " draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#8C2B2B; text-align: center;"> <span class="m-3 "> meet new people</span></span>
+                </div>
+                <div id="engage with friends and family"  class="example-draggable " draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#00268A; text-align: center;"> <span class="m-3 ">engage with friends and family </span></span>
+                </div>
+                <div id="get inspired"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsLight p-1" style="border: 0px; border-radius:15px; background-color:#F2F2F2; text-align: center;"> <span class="m-3 ">get inspired</span></span>
+                </div>
+                <div id="achieve fitness goals"  class="example-draggable " draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#8C2B2B; text-align: center;"> <span class="m-3 ">achieve fitness goals</span></span>
+                </div>
+                <div id="be part of a digital community"  class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#00268A; text-align: center;"> <span class="m-3 ">be part of a digital community </span></span>
+                </div>
+                <div id="try new things"  class="example-draggable " draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#9DD4E0; text-align: center;"> <span class="m-3 ">try new things</span></span>
+                </div>
+                <div id="express myself creatively"  class="example-draggable " draggable="true" ondragstart="onDragStart(event);">
+                  <span class="smallElementsDark p-1" style="border: 0px; border-radius:15px; background-color:#9DD4E0; text-align: center;"> <span class="m-3 "> express myself creatively</span></span>
+                </div>
+
+
+                <form id="draggable-15" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+
+                      <label for="addyourown" class="smallElementsDark" > Add your own: </label><br>
+                      <input type="text" id="addyourown" name="fname"><br>
+
+                </form>
+
+
+              </div>
+
+
+
+              <div class="example-dropzone col-6 p-2" style="border: 0px; border-radius:18px;" id="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+
+
+              </div>
+            </div>
+
+              <div class="right p-3">
+
+                  <button class="col-sm-4 col-lg-4 buttons" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="submit();">Next</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      <!-- SECTION 3 -->
+      <div class="example-parent row" style ="visibility:hidden;" id="section-3">
+
+        <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5">
+
+              <div class="pb-3">
+
+                    <h1 class=" headingDark">
+                    <span style="opacity:0.5;"> 1. </span> 2. <span style="opacity:0.5;"> 3. 4. 5. </span>
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      What third party interests would you like to support?
+                    </h1>
+              </div>
+
+              <div class="pb-5">
+
+                    <p class="textDark">There are two things, that make interacting with your Dado a tricky business: their fragmented nature and the fact that it's very hard to meet them on your own terms.
+                    </p>
+                    <p class="textDark">
+                      Both in the process of data collection and in its representation back to you there are usually other players involved. Currently, these third parties are in a very powerful position, because they select what information about you is important to record and how this information is presented back to you. Additionally, they also decide what doesn't get relayed back to you and what other interests your data is used for without your direct involvement.
+                    </p>
+
+              </div>
+
+              <div class="right p-3">
+                <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection4();"> <span class="buttons"> Next </span> </button>
+              </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+      <!-- SECTION 4 -->
+      <div class="example-parent row" style ="visibility:hidden;" id="section-4">
+
+        <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5">
+
+              <div class="pb-3">
+                    <h1 class=" headingDark">
+                    <span style="opacity:0.5;"> 1. </span> 2. <span style="opacity:0.5;"> 3. 4. 5.</span>
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      What third party interests would you like to support?
+                    </h1>
+              </div>
+
+              <div class="pb-5">
+                    <p class="textDark">Select them from the list.
+                    </p>
+              </div>
+
+
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-primary m-2" id="data extraction" onclick="interest_submit(this)">data extraction</button>
+            <button class="btn btn-primary m-2" id="development of prediction products" onclick="interest_submit(this)">development of prediction products</button>
+            <button class="btn btn-primary m-2" id="national security" onclick="interest_submit(this)">national security</button>
+            <button class="btn btn-primary m-2" id="population control" onclick="interest_submit(this)">population control</button>
+            <button class="btn btn-primary m-2" id="health control" onclick="interest_submit(this)">health control</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-primary m-2" id="scientific research" onclick="interest_submit(this)">scientific research</button>
+            <button class="btn btn-primary m-2" id="product research & innovation" onclick="interest_submit(this)">product research & innovation</button>
+            <button class="btn btn-primary m-2" id="market research" onclick="interest_submit(this)">market research</button>
+            <button class="btn btn-primary m-2" id="artistic research" onclick="interest_submit(this)">artistic research</button>
+            <button class="btn btn-primary m-2" id="user experience optimization" onclick="interest_submit(this)">user experience optimization</button>
+            <button class="btn btn-primary m-2" id="development of prediction products" onclick="interest_submit(this)">development of prediction products</button>
+          </div>
+
+        </div>
+
+
+        <div class="right p-5">
+          <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection5();"> <span class="buttons"> Next </span> </button>
+        </div>
+      </div>
+
+    </div>
+
+      <!-- SECTION 5 -->
+      <div class="example-parent row" style ="visibility:hidden;" id="section-5">
+
+        <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5" style="background-color: #E6E6E6; border-radius:15px;">
+            <h1 class="p-2 headingLight mb-2 pb-3">What data are we talking about?</h1>
+
+            <div class="col-sm-12">
+
+                  <p class="textLight">
+                    Dados are not conventional species with a central nervous system but are usually scattered around many different servers and databases. Often the only link between these fragments is their reference to you. This agreement automatically extends to every fraction of their existence, meaning all digital information that exists about you, generated with and without your knowledge.
+                  </p>
+                  <p class="textLight">
+                    This includes data collected by online services, social media platforms, smart wearables, smart home devices but also public CCTV cameras, border control officers, etc.
+                  </p>
+                  <p class="textLight">
+                    Metadata and predictions that can be derived from online and offline activities are also within the <strong> scope of the agreement.</strong> </p>
+                  </p>
+
+
+              </div>
+
+              <div class="right p-3">
+                <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection6();"> <span class="buttons"> Next </span> </button>
+              </div>
+
+          </div>
+
+
+      </div>
+
+      <!-- SECTION 6 -->
+      <div class="example-parent row justify-content-center" style ="visibility:hidden;" id="section-6">
+
+        <div class="col-sm-11 col-lg-5 p-5">
+
+              <div class="pb-3">
+                    <h1 class=" headingDark">
+                    <span style="opacity:0.5;"> 1. 2. </span> 3. <span style="opacity:0.5;"> 4. 5.</span>
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      What do you want to share?
+                    </h1>
+              </div>
+
+              <div class="pb-5">
+                    <p class="textDark">To get you started on deciding how you share your data we have assembled four different packages. Feel free to pick whichever one feels right.
+                    </p>
+              </div>
+
+
+
+
+        <div class="row">
+          <div class="col-11 p-3 m-3" style="background-color:#F2F2F2; border-width:0px; border-radius:15px;" onclick="animate_6(this);">
+            <h2>Ultimate Privacy</h2>
+
+            <p class="textInactive">
+              * tight restriction on data collection <br>
+              * Only enables transaction that are necessary to be a legally registered citizen <br>
+              * Minimum risk of data falling into wrong hands </p>
+
+              <button class="btn btn-primary col-4 buttons" style="background-color:#F291E2; border-width:0px; border-radius:15px; visibility:hidden;" id="testButton" onclick="Privacy()">Select</button>
+
+          </div>
+
+          <div class="col-11 p-3 m-3" style="background-color:#F2F2F2; border-width:0px; border-radius:15px;" onclick="animate_6(this);">
+            <h2 >Informed Participation </h2>
+            <p class="textInactive">
+              * allows trusted third parties to collect and use data to enable their services, and those alone <br>
+              * precise decisions allow you to engage exactly the way you feel safe and comfortable </p>
+            <button class="btn btn-primary buttons" style="background-color:#F291E2; border-width:0px; border-radius:15px; visibility:hidden;" onclick="Informed()">Select</button>
+          </div>
+          <div class="col-11 p-3 m-3" style="background-color:#F2F2F2; border-width:0px; border-radius:15px;" onclick="animate_6(this);">
+            <h2>Explorer Mode</h2>
+            <p class="textInactive">
+              * enables experimentation with different types of data collection <br>
+              * open for unusual representations and new ideas</br>
+              * tight restrictions of third parties, to make sure no one takes advantage</p>
+            <button class="btn btn-primary buttons" style="background-color:#F291E2; border-width:0px; border-radius:15px; visibility:hidden;" onclick="Explorer()">Select</button>
+          </div>
+          <div class="col-11 p-3 m-3" style="background-color:#F2F2F2; border-width:0px; border-radius:15px;" onclick="animate_6(this);">
+            <h2>Pants Off!</h2>
+            <p class="textInactive">
+              * here‘s a new trend to follow, new app to try? Sign me up!<br>
+              * enables all the perks of personalized experiences.<br>
+              * anyone after my data? Let them have it! I have nothing to hide.</p>
+            <button class="btn btn-primary buttons" style="background-color:#F291E2; border-width:0px; border-radius:15px; visibility:hidden;" onclick="Pants()">Select</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <!-- SECTION 7 -->
+      <div class="example-parent row justify-content-center" style ="visibility:hidden;" id="section-7">
+
+        <div class="col-sm-11 col-lg-5 p-5">
+
+              <div class="pb-3">
+                    <h1 class=" headingDark">
+                    <span style="opacity:0.5;"> 1. 2. </span> 3. <span style="opacity:0.5;"> 4. 5.</span>
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      What do you want to share?
+                    </h1>
+              </div>
+
+              <div class="pb-5">
+                    <p class="textDark">Based on your previous selection, we have matched different data types with four different privacy categories. If there is anything about you that you want the whole world to know, or something that is extra sensitive you can drag and drop data types as you wish. If you're happy with our selection, just click continue.
+                    </p>
+              </div>
+
+
+
+                <div class="right p-3 pb-5">
+                  <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="submit_7();"><span class="buttons"> Continue </span> </button>
+                </div>
+
+
+
+        <div class="row pt-5">
+
+            <div class="example-dropzone col-5 m-2" style="background-color:#8C2B2B" id="rank_1" ondragover="onDragOver_7(event);" ondrop="onDrop_7(event);">
+              <div class="p-2">
+                 <h2 style="color:white;"> Rank I (Red) </h2>
+                 <p class="smallElementsDark">
+                This data is preferably not collected. If it does exist it is shared with no one. </p>
+              </div>
+              <!--<div id="third-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                <span class="ApfelGrotezk" style="border: 1px solid; border-radius:10px; background-color:#000000;"><span class="m-2">1</span></span>
+              </div>-->
+
+            </div>
+
+            <div class="example-dropzone col-5 m-2" style="background-color:#F291E2" id="rank_2" ondragover="onDragOver_7(event);" ondrop="onDrop_7(event);">
+              <div class="p-2">
+                 <h2 style="color:white;"> Rank II (Pink) </h2>
+                 <p class="smallElementsDark">
+                This data is shared only with trusted third parties*. </p>
+              </div>
+              <!--<div id="third-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                <span class="ApfelGrotezk" style="border: 1px solid; border-radius:10px; background-color:#000000;"><span class="m-2">1</span></span>
+              </div>-->
+            </div>
+
+
+
+                  <div class="example-dropzone col-5 m-2" style="background-color:#9DD4E0" id="rank_3"ondragover="onDragOver_7(event);" ondrop="onDrop_7(event);">
+                    <div class="p-2">
+                       <h2 style="color:white;"> Rank III (Turquoise) </h2>
+                       <p class="smallElementsDark">
+                      This data is shared only with trusted third parties* and with those pursuing supported interests. </p>
+                    </div>
+                    <!--<div id="third-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                      <span class="ApfelGrotezk" style="border: 1px solid; border-radius:10px; background-color:#000000;"><span class="m-2">1</span></span>
+                    </div>-->
+                  </div>
+
+                  <div class="example-dropzone col-5 m-2" style="background-color:#00268A" id="rank_4" ondragover="onDragOver_7(event);" ondrop="onDrop_7(event);">
+                    <div class="p-2">
+                       <h2 style="color:white; opacity:0.8;"> Rank IV (Blue) </h2>
+                       <p class="smallElementsDark" style="opacity:0.8;">
+                      This data is shared with third parties only on legitimate interest. </p>
+                    </div>
+                    <!--<div id="third-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                      <span class="ApfelGrotezk" style="border: 1px solid; border-radius:10px; background-color:#000000;"><span class="m-2">1</span></span>
+                    </div>-->
+                  </div>
+
+                  <div class="example-dropzone col-5 m-2" style="background-color:white" id="rank_5" ondragover="onDragOver_7(event);" ondrop="onDrop_7(event);">
+                    <div class="p-2">
+                       <h2> Rank V (White) </h2>
+                       <p class="smallElementsLight" style="color: #666666; opacity:0.8;">
+                      This data is shared with everyone. </p>
+                    </div>
+
+                    <!--<div id="third-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                      <span class="ApfelGrotezk" style="border: 1px solid; border-radius:10px; background-color:#000000;"><span class="m-2">1</span></span>
+                    </div>-->
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+    </div>
+      <!-- SECTION 8 -->
+      <div class="example-parent row" style ="visibility:hidden;" id="section-8">
+
+        <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5" style="background-color: #E6E6E6; border-radius:15px;">
+            <h1 class="p-2 headingLight mb-2 pb-3">Who are the third parties?</h1>
+
+            <div class="col-sm-12">
+
+                  <p class="textLight">
+                  The set of third parties your dado interacts are quite diverse to say the least, ranging from governing bodies to private companies in all different types of fields.
+                  </p>
+                  <p class="textLight">
+                    The Association of Human & Dado Friendship publishes a yearly ranking of these third parties, where they are evaluated by a panel of experts according to criteria such as transparency over data use,  transparency over storage of data, data greediness. <br>
+                  </p>
+                  <p class="textLight">
+                    Taking in account this ranking, your answers about the interests you would be willing to support and your classification of the different data types, we have pre-assigned third parties to the different ranks of sharing.
+                  </p>
+
+
+              </div>
+
+              <div class="right p-3">
+                <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection9();"> <span class="buttons"> Next </span> </button>
+              </div>
+
+          </div>
+
+      </div>
+
+      <!-- SECTION 9 -->
+      <div class="example-parent row justify-content-center" style ="visibility:hidden;" id="section-9">
+        <div class="col-sm-11 col-lg-5 p-5">
+
+            <div class="pb-3">
+                  <h1 class=" headingDark">
+                  <span style="opacity:0.5;"> 1. 2. 3.</span> 4. <span style="opacity:0.5;"> 5.</span>
+                  </h1>
+                  <h1 class=" px-0 py-2 headingDark">
+                    Who do you want to share data with?
+                  </h1>
+            </div>
+
+            <div class="pb-5">
+                  <p class="textDark">Taking in account this ranking, your answers about the interests you would be willing to support and your classification of the different data types, we have pre-assigned third parties to the different tiers of sharing. If you see anyone you know and trust, or others that you would like to exclude, you can adjust as you wish. If you're happy with our selection, just click continue.
+                  </p>
+            </div>
+
+
+
+              <div class="right p-3 pb-5">
+                <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="submit_9();"><span class="buttons"> Continue </span> </button>
+              </div>
+
+
+
+
+      <div class="row justify-content-center">
+
+                <div class="example-dropzone col-12 m-2" style="background-color:#00268A" id="third_parties_z"ondragover="onDragOver_9(event);" ondrop="onDrop_9(event);">
+                  <div class="p-2">
+                     <h2 style="color:white;"> Third Parties with legitimate interests. </h2>
+                     <p class="smallElementsDark">
+                    Data from Rank IV is shared with these third parties. </p>
+                  </div>
+                </div>
+
+                <div class="example-dropzone col-12 m-2" style="background-color:#9DD4E0" id="third_parties_y" ondragover="onDragOver_9(event);" ondrop="onDrop_9(event);">
+                  <div class="p-2">
+                     <h2 style="color:white;"> Third Parties with supported interests. </h2>
+                     <p class="smallElementsDark">
+                    Data from Rank III is shared with these third parties. </p>
+                  </div>
+
+                </div>
+
+                <div class="example-dropzone col-12 m-2" style="background-color:#F291E2" id="third_parties_x" ondragover="onDragOver_9(event);" ondrop="onDrop_9(event);">
+                  <div class="p-2">
+                     <h2 style="color:white;">Trusted Third Parties </h2>
+                     <p class="smallElementsDark">
+                    Data from Rank II is shared with these third parties. </p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 10 -->
+      <div class="example-parent row justify-content-center" style ="visibility:hidden;" id="section-10">
+
+
+          <div class="col-sm-11 col-lg-5 p-5">
+
+              <div class="pb-3">
+                    <h1 class=" headingDark">
+                    <span style="opacity:0.5;"> 1. 2. 3. 4. </span> 5.
+                    </h1>
+                    <h1 class=" px-0 py-2 headingDark">
+                      Review all your answers
+                    </h1>
+              </div>
+
+              <div class="pb-5">
+                    <p class="textDark">
+                      Here's a summary of all your answers. If you're happy, click submit.
+                    </p>
+              </div>
+
+              <div class="right p-3 pb-5">
+                <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="goSection11();"><span class="buttons"> Submit </span> </button>
+              </div>
+
+        <div id="Summary_Objectives" class="p-3 m-3" style="background-color:#8C2B2B; border-width:0px; border-radius:15px;">
+
+        </div>
+        <div id="Summary_Interests" class="p-3 m-3" style="background-color:#020873; border-width:0px; border-radius:15px;">
+
+        </div>
+        <div id="Summary_Data" class="p-3 m-3" style="background-color:#9DD4E0; border-width:0px; border-radius:15px;">
+          <h2 class="white"> Classification of Data Types </h2>
+          <table>
+            <tr>
+                <th>Rank I</th>
+                <th > Rank II</th>
+                <th > Rank III</th>
+                <th > Rank IV </th>
+                <th > Rank V </th>
+            </tr>
+            <tr>
+                <td id="RANK I"></td>
+                <td id="RANK II"></td>
+                <td id="RANK III"></td>
+                <td id="RANK IV"></td>
+                <td id="RANK V"></td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="Summary_Third" class="p-3 m-3" style="background-color:#F291E2; border-width:0px; border-radius:15px;">
+          <h2 class="white"> Classification of Third Parties </h2>
+          <table>
+            <tr>
+                <th>Trusted third parties (Rank III)</th>
+                <th >Third parties with supported interest (Rank IV)</th>
+                <th > Third parties with legitimate interest (Rank V)</th>
+
+            </tr>
+            <tr>
+                <td id="partyX"></td>
+                <td id="partyY"></td>
+                <td id="partyZ"></td>
+            </tr>
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+
+      <!-- SECTION 11 -->
+      <div class="example-parent row" style ="visibility:hidden;" id="section-11">
+
+        <div class="col-sm-11 col-lg-5 position-absolute top-50 start-50 translate-middle p-5" style="background-color: #E6E6E6; border-radius:15px;">
+            <h1 class="p-2 headingLight mb-2 pb-3">Congratulations</h1>
+
+            <div class="col-sm-12">
+
+                  <p class="textLight">
+                    You have successfully customized your agency agreement with your Dado. Unfortunately, it is only in this speculative reality that Dados are legally recognized entities. This means that protecting your personal data within the current surveillance capitalist system is a tedious and frustrating affair.                  </p>
+                  </p>
+                  <p class="textLight"> <strong>
+                    But how did it feel to make these decisions? And isn't it strange that in real life other people mostly make them for you and you have virtually no say in the matter?                  </p>
+                  </strong> </p>
+                  <p class="textLight">
+                    If you would like to receive your customized contract, feel free to leave your name and email address here. We will treat this information exactly as you specified in the contract before.                  </p>
+                  </p>
+
+              </div>
+          <div class="col-12 p-4" style= "background-color: blue; border-radius:15px;">
+
+          <form id="form-12" class="example-draggable" draggable="" ondragstart="">
+            <label for="addyourown" class="smallElementsDark">Name:</label><br>
+            <input type="text" id="addyourown" name="fcontact"><br>
+            <label for="addyourown" class="smallElementsDark">Email:</label><br>
+            <input type="text" id="addyourown" name="femail"><br>
+          </form>
+          <div class="right p-3">
+          <button class="col-sm-6 col-lg-5" style="border:0px; background-color: #F291E2; border-radius:15px;" onclick="submitCanvas();"><span class="buttons"> Finish </span></button>
+          </div>
+          <canvas style="display:none;" id="canvasdoc" ></canvas>
+          <canvas style="display:none;" id="canvas_second" ></canvas>
+          <canvas style="display:none;" id="canvas_third" ></canvas>
+          <canvas style="display:none;" id="canvas_fourth" ></canvas>
+        </div>
+
+
+
+
+
+      <script src="JS/Index.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    </body>
+
+
+</html>
