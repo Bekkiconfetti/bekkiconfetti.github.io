@@ -897,7 +897,7 @@ function submitCanvas(){
 }
 
 
-var timeoutInMiliseconds = 60000;
+var timeoutInMiliseconds = 480000;
 var timeoutId;
 
 function startTimer() {

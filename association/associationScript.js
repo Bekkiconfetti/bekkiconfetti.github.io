@@ -1,4 +1,4 @@
-var timeoutInMiliseconds = 120000;
+var timeoutInMiliseconds = 480000;
 var timeoutId;
 
 function startTimer() {
