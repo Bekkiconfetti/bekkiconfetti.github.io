@@ -8,7 +8,15 @@
   font-family: ApfelGrotezk;
 }
 
-
+.backgroundVid {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right:0;
+  bottom:0;
+  z-index: -1;
+  display: block;
+}
 
 .buttons {
   font-family: 'Montserrat';
@@ -62,6 +70,7 @@ p {
 .textInactive{
   color: #B3B3B3;
 }
+
 
 
 

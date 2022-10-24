@@ -889,15 +889,12 @@ function submitCanvas(){
     link.download = `${e}_4.png`;
     link.href = document.getElementById('canvas_fourth').toDataURL()
     link.click();
-
-
-
-
     }
+    location.reload();
 }
 
 
-var timeoutInMiliseconds = 480000;
+var timeoutInMiliseconds = 600000;
 var timeoutId;
 
 function startTimer() {
@@ -907,7 +904,7 @@ function startTimer() {
 
 function doInactive() {
     // does whatever you need it to actually do - probably signs them out or stops polling the server for info
-		window.location.href = "../index.html";
+		location.reload();
 }
 
 function setupTimers () {
