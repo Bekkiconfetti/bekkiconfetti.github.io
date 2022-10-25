@@ -12,6 +12,9 @@ const rank_3 = [];
 const rank_4 = [];
 const rank_5 = [];
 
+
+let thanks = false;
+
 console.log(choices);
 
 function onDragStart(event) {
@@ -687,86 +690,86 @@ function submitCanvas(){
     background.crossOrigin = 'anonymous';
     background.src = "img/first.jpg";
     background.onload =  function(){
-    let n = document.getElementById('form-12').elements[0].value;
-    let e = document.getElementById('form-12').elements[1].value;
+          let n = document.getElementById('form-12').elements[0].value;
+          let e = document.getElementById('form-12').elements[1].value;
 
-    var canvas = document.getElementById('canvasdoc');
-    var ctx = canvas.getContext("2d");
-    ctx.canvas.width = 2480;
-    ctx.canvas.height = 3508;
+          var canvas = document.getElementById('canvasdoc');
+          var ctx = canvas.getContext("2d");
+          ctx.canvas.width = 2480;
+          ctx.canvas.height = 3508;
 
-    //ctx.fillStyle = "#ffffff";
-    //ctx.fillRect(0, 0, 2480, 3508);
+          //ctx.fillStyle = "#ffffff";
+          //ctx.fillRect(0, 0, 2480, 3508);
 
-    ctx.font = "45px montserrat";
-    ctx.fillStyle= '#000000';
-    ctx.drawImage(background,0,0);
+          ctx.font = "45px montserrat";
+          ctx.fillStyle= '#000000';
+          ctx.drawImage(background,0,0);
 
-    ctx.fillText(n,790,1334);
-    ctx.fillText(n, 438, 1683);
+          ctx.fillText(n,790,1334);
+          ctx.fillText(n, 438, 1683);
 
-    //let dataUrl_back = canvas.toDataURL(),
-    //back_postcard = document.createElement('img');
-    //back_postcard.crossOrigin = 'null';
-    //back_postcard.src = dataUrl_back;
+          //let dataUrl_back = canvas.toDataURL(),
+          //back_postcard = document.createElement('img');
+          //back_postcard.crossOrigin = 'null';
+          //back_postcard.src = dataUrl_back;
 
 
-    var link = document.createElement('a');
-    link.download = `${e}_1.png`;
-    link.href = document.getElementById('canvasdoc').toDataURL()
-    link.click();
-    }
+          var link = document.createElement('a');
+          link.download = `${e}_1.png`;
+          link.href = document.getElementById('canvasdoc').toDataURL()
+          link.click();
+      }
 
     //SECOND PAGE
     var background_second = new Image();
     background_second.crossOrigin = 'anonymous';
     background_second.src = "img/second.jpg";
     background_second.onload =  function(){
-    let n = document.getElementById('form-12').elements[0].value;
-    let e = document.getElementById('form-12').elements[1].value;
+          let n = document.getElementById('form-12').elements[0].value;
+          let e = document.getElementById('form-12').elements[1].value;
 
-    var canvas_second = document.getElementById('canvas_second');
-    var ctx_second = canvas_second.getContext("2d");
-    ctx_second.canvas.width = 2480;
-    ctx_second.canvas.height = 3508;
+          var canvas_second = document.getElementById('canvas_second');
+          var ctx_second = canvas_second.getContext("2d");
+          ctx_second.canvas.width = 2480;
+          ctx_second.canvas.height = 3508;
 
-    //ctx.fillStyle = "#ffffff";
-    //ctx.fillRect(0, 0, 2480, 3508);
+          //ctx.fillStyle = "#ffffff";
+          //ctx.fillRect(0, 0, 2480, 3508);
 
-    ctx_second.drawImage(background_second,0,0);
+          ctx_second.drawImage(background_second,0,0);
 
-    let q = 0;
-    choices.forEach((item, i) => {
-      console.log('ciao');
-      console.log(item);
-      if(item != ''){
-      ctx_second.font = "45px montserrat";
-      ctx_second.fillStyle= '#000000';
-      ctx_second.fillText('- '+item,206,962 + q);
-      q = q + 59;}
-    });
+          let q = 0;
+          choices.forEach((item, i) => {
+            console.log('ciao');
+            console.log(item);
+            if(item != ''){
+            ctx_second.font = "45px montserrat";
+            ctx_second.fillStyle= '#000000';
+            ctx_second.fillText('- '+item,206,962 + q);
+            q = q + 59;}
+          });
 
-    let r = 0;
-    supported_interests.forEach((item, i) => {
-      console.log('ciao');
-      console.log(item);
-      if(item != ''){
-      ctx_second.font = "45px montserrat";
-      ctx_second.fillStyle= '#000000';
-      ctx_second.fillText('- '+item,206,1981 + r);
-      r = r + 59;}
-    });
+          let r = 0;
+          supported_interests.forEach((item, i) => {
+            console.log('ciao');
+            console.log(item);
+            if(item != ''){
+            ctx_second.font = "45px montserrat";
+            ctx_second.fillStyle= '#000000';
+            ctx_second.fillText('- '+item,206,1981 + r);
+            r = r + 59;}
+          });
 
-    //let dataUrl_back = canvas.toDataURL(),
-    //back_postcard = document.createElement('img');
-    //back_postcard.crossOrigin = 'null';
-    //back_postcard.src = dataUrl_back;
+          //let dataUrl_back = canvas.toDataURL(),
+          //back_postcard = document.createElement('img');
+          //back_postcard.crossOrigin = 'null';
+          //back_postcard.src = dataUrl_back;
 
 
-    var link = document.createElement('a');
-    link.download = `${e}_2.png`;
-    link.href = document.getElementById('canvas_second').toDataURL()
-    link.click();
+          var link = document.createElement('a');
+          link.download = `${e}_2.png`;
+          link.href = document.getElementById('canvas_second').toDataURL()
+          link.click();
     }
 
     //THIRD PAGE
@@ -775,74 +778,74 @@ function submitCanvas(){
     background_third.src = "img/third.jpg";
     background_third.onload =  function(){
 
-    let n = document.getElementById('form-12').elements[0].value;
-    let e = document.getElementById('form-12').elements[1].value;
+          let n = document.getElementById('form-12').elements[0].value;
+          let e = document.getElementById('form-12').elements[1].value;
 
-    var canvas_third = document.getElementById('canvas_third');
-    var ctx_third = canvas_third.getContext("2d");
-    ctx_third.canvas.width = 2480;
-    ctx_third.canvas.height = 3508;
+          var canvas_third = document.getElementById('canvas_third');
+          var ctx_third = canvas_third.getContext("2d");
+          ctx_third.canvas.width = 2480;
+          ctx_third.canvas.height = 3508;
 
-    //ctx.fillStyle = "#ffffff";
-    //ctx.fillRect(0, 0, 2480, 3508);
+          //ctx.fillStyle = "#ffffff";
+          //ctx.fillRect(0, 0, 2480, 3508);
 
-    ctx_third.drawImage(background_third,0,0);
+          ctx_third.drawImage(background_third,0,0);
 
-    q = 0;
-    rank_1.forEach((item, i) => {
-      if(item != ''){
-      ctx_third.font = "28px montserrat";
-      ctx_third.fillStyle= '#000000';
-      ctx_third.fillText('- '+item,110,1099 + q);
-      q = q + 45;}
-    });
+          q = 0;
+          rank_1.forEach((item, i) => {
+            if(item != ''){
+            ctx_third.font = "28px montserrat";
+            ctx_third.fillStyle= '#000000';
+            ctx_third.fillText('- '+item,110,1099 + q);
+            q = q + 45;}
+          });
 
-    q = 0;
-    rank_2.forEach((item, i) => {
-      if(item != ''){
-      ctx_third.font = "28px montserrat";
-      ctx_third.fillStyle= '#000000';
-      ctx_third.fillText('- '+item,532,1099 + q);
-      q = q + 45;}
-    });
+          q = 0;
+          rank_2.forEach((item, i) => {
+            if(item != ''){
+            ctx_third.font = "28px montserrat";
+            ctx_third.fillStyle= '#000000';
+            ctx_third.fillText('- '+item,532,1099 + q);
+            q = q + 45;}
+          });
 
-    q = 0;
-    rank_3.forEach((item, i) => {
-      if(item != ''){
-      ctx_third.font = "28px montserrat";
-      ctx_third.fillStyle= '#000000';
-      ctx_third.fillText('- '+item,950,1099 + q);
-      q = q + 45;}
-    });
+          q = 0;
+          rank_3.forEach((item, i) => {
+            if(item != ''){
+            ctx_third.font = "28px montserrat";
+            ctx_third.fillStyle= '#000000';
+            ctx_third.fillText('- '+item,950,1099 + q);
+            q = q + 45;}
+          });
 
-    q = 0;
-    rank_4.forEach((item, i) => {
-      if(item != ''){
-      ctx_third.font = "28px montserrat";
-      ctx_third.fillStyle= '#000000';
-      ctx_third.fillText('- '+item,1368,1099 + q);
-      q = q + 45;}
-    });
+          q = 0;
+          rank_4.forEach((item, i) => {
+            if(item != ''){
+            ctx_third.font = "28px montserrat";
+            ctx_third.fillStyle= '#000000';
+            ctx_third.fillText('- '+item,1368,1099 + q);
+            q = q + 45;}
+          });
 
-    q = 0;
-    rank_5.forEach((item, i) => {
-      if(item != ''){
-      ctx_third.font = "28px montserrat";
-      ctx_third.fillStyle= '#000000';
-      ctx_third.fillText('- '+item,1787,1099 + q);
-      q = q + 45;}
-    });
+          q = 0;
+          rank_5.forEach((item, i) => {
+            if(item != ''){
+            ctx_third.font = "28px montserrat";
+            ctx_third.fillStyle= '#000000';
+            ctx_third.fillText('- '+item,1787,1099 + q);
+            q = q + 45;}
+          });
 
-    //let dataUrl_back = canvas.toDataURL(),
-    //back_postcard = document.createElement('img');
-    //back_postcard.crossOrigin = 'null';
-    //back_postcard.src = dataUrl_back;
+          //let dataUrl_back = canvas.toDataURL(),
+          //back_postcard = document.createElement('img');
+          //back_postcard.crossOrigin = 'null';
+          //back_postcard.src = dataUrl_back;
 
 
-    var link = document.createElement('a');
-    link.download = `${e}_3.png`;
-    link.href = document.getElementById('canvas_third').toDataURL()
-    link.click();
+          var link = document.createElement('a');
+          link.download = `${e}_3.png`;
+          link.href = document.getElementById('canvas_third').toDataURL()
+          link.click();
     }
 
     //FOURTH PAGE
@@ -850,47 +853,52 @@ function submitCanvas(){
     background_fourth.crossOrigin = 'anonymous';
     background_fourth.src = "img/fourth.jpg";
     background_fourth.onload =  function(){
-    let n = document.getElementById('form-12').elements[0].value;
-    let e = document.getElementById('form-12').elements[1].value;
+          let n = document.getElementById('form-12').elements[0].value;
+          let e = document.getElementById('form-12').elements[1].value;
 
-    var canvas_fourth = document.getElementById('canvas_fourth');
-    var ctx_fourth = canvas_fourth.getContext("2d");
-    ctx_fourth.canvas.width = 2480;
-    ctx_fourth.canvas.height = 3508;
+          var canvas_fourth = document.getElementById('canvas_fourth');
+          var ctx_fourth = canvas_fourth.getContext("2d");
+          ctx_fourth.canvas.width = 2480;
+          ctx_fourth.canvas.height = 3508;
 
-    //ctx.fillStyle = "#ffffff";
-    //ctx.fillRect(0, 0, 2480, 3508);
+          //ctx.fillStyle = "#ffffff";
+          //ctx.fillRect(0, 0, 2480, 3508);
 
-    ctx_fourth.drawImage(background_fourth,0,0);
+          ctx_fourth.drawImage(background_fourth,0,0);
 
-    let q = 0;
-    third_parties_x.forEach((item, i) => {
-      console.log('ciao');
-      console.log(item);
-      if(item != ''){
-      ctx_fourth.font = "45px montserrat";
-      ctx_fourth.fillStyle= '#000000';
-      ctx_fourth.fillText('- '+item,204,1494 + q);
-      q = q + 59;}
-      else{
-        ctx_fourth.font = "45px montserrat";
-        ctx_fourth.fillStyle= '#000000';
-        ctx_fourth.fillText('- no trusted third parties -',204,1494);
-      }
-    });
+          let q = 0;
+          third_parties_x.forEach((item, i) => {
+            console.log('ciao');
+            console.log(item);
+            if(item != ''){
+            ctx_fourth.font = "45px montserrat";
+            ctx_fourth.fillStyle= '#000000';
+            ctx_fourth.fillText('- '+item,204,1494 + q);
+            q = q + 59;}
+            else{
+              ctx_fourth.font = "45px montserrat";
+              ctx_fourth.fillStyle= '#000000';
+              ctx_fourth.fillText('- no trusted third parties -',204,1494);
+            }
+          });
 
-    //let dataUrl_back = canvas.toDataURL(),
-    //back_postcard = document.createElement('img');
-    //back_postcard.crossOrigin = 'null';
-    //back_postcard.src = dataUrl_back;
+          //let dataUrl_back = canvas.toDataURL(),
+          //back_postcard = document.createElement('img');
+          //back_postcard.crossOrigin = 'null';
+          //back_postcard.src = dataUrl_back;
 
 
-    var link = document.createElement('a');
-    link.download = `${e}_4.png`;
-    link.href = document.getElementById('canvas_fourth').toDataURL()
-    link.click();
+          var link = document.createElement('a');
+          link.download = `${e}_4.png`;
+          link.href = document.getElementById('canvas_fourth').toDataURL()
+          link.click();
     }
-    location.reload();
+
+    document.getElementById('section-11').style.display='none';
+    document.getElementById('section-12').style.visibility='visible';
+    window.scrollTo(0, 0);
+    thanks=true;
+
 }
 
 
@@ -900,6 +908,12 @@ var timeoutId;
 function startTimer() {
     // window.setTimeout returns an Id that can be used to start and stop a timer
     timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds)
+    if(thanks==true){
+      thanks=false;
+      doInactive();
+
+    }
+    
 }
 
 function doInactive() {
