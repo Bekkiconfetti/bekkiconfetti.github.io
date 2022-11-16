@@ -1,4 +1,4 @@
-let carouselCounter = 0;
+
 
 let otherImages=document.getElementsByClassName('otherImage');
 
@@ -8,7 +8,7 @@ const width  = window.innerWidth || document.documentElement.clientWidth ||
 document.body.clientWidth;
 
 let scramble = function(event){
-			document.getElementById('blockCarousel').style.display='none';
+
 			//SCRAMBLE
 					for(let i=0;i<otherImages.length;i++){
 					otherImages[i].style.display= 'block';
@@ -19,38 +19,6 @@ let scramble = function(event){
 				}
 			}
 
-let carousel = function(event){
-	//show Carousel and hide otherImages
-	document.getElementById('blockCarousel').style.display='block';
-	for(let i=0;i<otherImages.length;i++){
-			otherImages[i].style.display= 'none';
-			}
-
-}
-
-let carouselNext = function(event){
-
-	carouselCounter=carouselCounter+1;
-
-	if (carouselCounter>=otherImages.length){
-		carouselCounter=0;
-	}
-
-	document.getElementById('carouselImage').src=otherImages[carouselCounter].src;
-
-}
-
-let carouselPrev = function(event){
-
-	carouselCounter=carouselCounter-1;
-
-	if (carouselCounter<=0){
-		carouselCounter=otherImages.length-1;
-	}
-
-	document.getElementById('carouselImage').src=otherImages[carouselCounter].src;
-
-}
 
 if(width<800){
 	//document.body.style.backgroundColor = 'aqua';
@@ -64,13 +32,9 @@ else{
 
 			//startButton.addEventListener('click',scramble);
 				window.addEventListener('load',scramble);
-				document.getElementById('title').addEventListener('click',scramble);
-
-				document.getElementById('nextArrow').addEventListener('click',carouselNext);
-				document.getElementById('prevArrow').addEventListener('click',carouselPrev);
 
 				for(let i=0; i<otherImages.length; i++) {
-					otherImages[i].addEventListener('click', carousel);
+					otherImages[i].addEventListener('click', scramble);
 				}
 
 }

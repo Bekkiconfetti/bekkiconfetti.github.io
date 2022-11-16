@@ -51,7 +51,7 @@ p {
   font-style: normal;
   color: #000000;
   font-size:0.9rem;
-  
+
 
 }
 
@@ -72,7 +72,47 @@ p {
   width:90%;
 }
 
+.carouselImage{
+
+  max-height:75vh;
+  width:auto;
+  display:block;
+  float:right;
+
+
+}
+
+#blockCarousel{
+  display:none;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    bottom: 810px;
+    left: 20px;
+    width:12%;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    bottom: 810px;
+    right: 50px;
+    width:12%;
+}
 #spacing {
   display:none;
   height: 20%;
+}
+
+.arrows:hover {
+  cursor:pointer;
+
+}
+
+.arrows{
+  margin:1.5rem;
+}
+
+#nextArrow{
+  margin-right:0rem;
 }
