@@ -68,6 +68,20 @@ Technology is becoming so complex nowadays that there is a need to unpack the me
 
 
 
+
+
+
+
+A post about an influencer adventure cat on instagram, an audio recording of its purring and the x-ray image of its spine taken by a vet, three forms of data that inform different relationships and inspire different behaviors toward the same animal. 
+In this sense data is not a mere representation of what's there, let alone an objective one, but it exercises a transformative power over reality. 
+From this realization it is easy to follow that there a systems of control embedded in our current data structures concerning socio-economic identities and scientific discourses - datapolitics instilled by governing institutions holding power over these structures. The interest of the doctor looking at the as a patient, the company a potential for revenue, the daughter a memory of home and comfort, are all embedded in the binary information.
+
+Using the three different data types investigated in our graduation projects (data from social media - social identity - Lukas, data from sensors placed in natural ecosystems - perception of nature - Jan, biometric data collected on the body - physical self -Rebekka) as case studies, discuss the potential for designers to intervene in data structures, both at the level of collection and representation, in order to democratize it, distributing power away from governing institutions and accomodating diverse sets of interests.
+
+
+
+
+
 Panelists:  Jan Christian Schulz , Lukas Völp , Marie Verdeil, Teresa Fernández Pello & Rebekka Jochem
 
 Specialist: Ron Wakkary

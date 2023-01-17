@@ -18,6 +18,10 @@ let scramble = function(event){
 					coverImages[i].style.top= Math.floor(Math.random()* (50 - 8 + 1) + 8)+'%';
 					coverImages[i].style.left=Math.floor(Math.random()* (70 - + 1) )+'%';
 					coverImages[i].style.zIndex=Math.floor(Math.random()*(4-1) + 1);
+
+					coverImages[0].style.zIndex=4;
+					coverImages[5].style.zIndex=4;
+					coverImages[6].style.zIndex=4;
 				}
 			}
 
