@@ -22,6 +22,7 @@ let scramble = function(event){
 					coverImages[0].style.zIndex=4;
 					coverImages[5].style.zIndex=4;
 					coverImages[6].style.zIndex=4;
+					coverImages[7].style.zIndex=4;
 				}
 			}
 
