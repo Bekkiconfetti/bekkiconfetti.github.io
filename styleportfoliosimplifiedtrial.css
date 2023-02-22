@@ -26,7 +26,9 @@ a {
 
 a:hover {
  	color: #0000FF;
+  cursor: pointer;
 }
+
 
 
 h2 {
@@ -40,10 +42,7 @@ h2 {
   color: #000000;
 }
 
-h2:hover {
-	color: #0000FF;
-	cursor: pointer;
-}
+
 
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -51,8 +50,6 @@ p {
   font-style: normal;
   color: #000000;
   font-size:0.9rem;
-
-
 }
 
 .navText{
@@ -83,7 +80,7 @@ p {
 }
 
 #blockCarousel{
-  display:none;
+  display:block;
 }
 
 .carousel-control-prev-icon {
@@ -111,8 +108,16 @@ p {
 
 .arrows{
   margin:1.5rem;
+  padding:0;
 }
 
 #nextArrow{
   margin-right:0rem;
+}
+
+#wearableReel{
+  display:none;
+}
+#wearableSelin{
+  display:none;
 }

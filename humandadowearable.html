@@ -51,56 +51,69 @@
 
            <h2 class="pb-2" id='title'> Dancing with the Dado</h2>
 
-           <p> <strong> <a href="./humandado.html"> (read more about what a dado is here) </a> </strong> </p>
-
             <p>
-                The Association for Human & Dado Friendship is a forum to support members in actively collaborating with their dado, taking control of the data streams, and rerouting them for their purposes.
-            </p>
+              The Association for Human & Dado Friendship is a forum to support members in actively collaborating with their dado, their data doubles - taking control of the data streams, and rerouting them for their purposes.             </p>
             <p>
-                This wearable, presented at DDW 2022, is a first example of such a rerouting. The data from a gyroscope, a common sensor used in every smartphone, would usually be represented as a statistic of the wearer's activity levels, often comparing them to fixed fitness goals like taking 10 000 steps a day.
-            </p>
+              This wearable, presented at DDW 2022, is a first example of such a rerouting. The data from a gyroscope, a common sensor used in every smartphone, would usually be represented as a statistic of the wearer's activity levels, often comparing them to fixed fitness goals like taking 10 000 steps a day. Moving away from this closed interpretation, the wearable translates the data into sound. This means that different movements and movement patterns of the sensor (in extension the body) generate sounds that reflect these gestures. The wearable introduces a new feedback loop opening up a playful mode of exploration, inspiring the wearer to start dancing with their data double.             </p>
             <p>
-              Moving away from this closed interpretation, the wearable translates the data into sound. This means that different movements and movement patterns of the sensor (in extension the body) generate sounds that reflect these gestures. The wearable introduces a new feedback loop opening up a playful mode of exploration, inspiring the wearer to start dancing with their data double.
+              It is the first result of an ongoing exploration in using modular synthesis to turn numeric data representing body movements, from the flick of a little toe to the placement of an elbow or the arch of a neck, to create music that then sparks new movements. The experiments started from commercially used image-based techniques to recognize posture and gait and now have evolved to feature more physical sensors that do not rely on large machine learning models.
             </p>
 
+            <div class="col-sm-12 col-md-9">
+              <img class="otherImage"  src=".\images\dancingdado4.jpg">
+              <img class="otherImage"  src=".\images\PREDancingDado3.gif">
+              <img class="otherImage"  src="images\repost(1).jpg">
+              <img class="otherImage" src=".\images\dancingdado3.JPG">
+              <img class="otherImage"  src=".\images\DancingDadoExperiments_2.gif">
 
 
+
+
+           </div>
           </div>
-
-           <div class="position-absolute bottom-0 end-0 col-sm-12 col-lg-7 col-xl-8">
-
-              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/791140797?h=69fc47ee38&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Dancing with the Dado"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-          </div>
-
-
         </div>
-
-    </div>
-    <div class= "container-fluid fixed-bottom">
-      <div class="col-sm-12">
-        <h2> ONGOING </h2>
-      </div>
     </div>
 
     <div class= "container-fluid fixed-bottom" id="blockCarousel">
 
         <div class="row justify-content-end">
-          <h2 style="text-align:right;"> <span class="arrows" id="prevArrow">← </span> <span class="arrows" id="nextArrow"> → </span> </h2>
+          <h2 style="text-align:right;"> <span class="arrows" id="nextArrow"> → </span> </h2>
         </div>
 
         <div class="row justify-content-end">
             <div class="col-5">
-                <img class="carouselImage" id="carouselImage" src=".\images\associationGIF.gif">
+                <img class="carouselImage" id="carouselImage" src=".\images\dancingdado4.jpg">
+
+                <video id="wearableReel" class="carouselImage" loop >
+                  <source src="images\wearableReel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video id="wearableSelin" class="carouselImage" loop >
+                  <source src="images\wearableSelin.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
             </div>
         </div>
     </div>
 
 
+    <div class= "container-fluid fixed-bottom">
+      <div class="col-sm-12">
+        <p> Listen to the <strong> <a href="https://vimeo.com/791140797"> wearable in action </a> </strong> or find out more about <strong> <a href="humandado.html"> dados </strong></a> </p>
+        <h2> ONGOING </h2>
+      </div>
+    </div>
 
 
-    <script src='projectScript.js'> </script>
+
+
+
+
+
+
+    <script src='projectScriptdancingdado.js'> </script>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
