@@ -121,3 +121,7 @@ p {
 #wearableSelin{
   display:none;
 }
+
+#title {
+  line-height:1.8rem;
+}
