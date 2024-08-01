@@ -42,6 +42,17 @@ h2 {
   color: #000000;
 }
 
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+  text-align: left;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+}
+
 
 
 p {
@@ -57,14 +68,39 @@ p {
 }
 
 .otherImage{
-  max-width:400px;
+  max-width:130vh;
   display:none;
 }
 
 .coverImage{
   max-width:400px;
   display:none;
+  width:100%;
+  height:auto;
 }
+#aboutImage{
+  max-width:400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+.coverImage:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+
 .writingImage{
   width:90%;
 }
@@ -72,6 +108,7 @@ p {
 .carouselImage{
 
   max-height:75vh;
+  max-width:120vh;
   width:auto;
   display:block;
   float:right;
@@ -103,6 +140,7 @@ p {
 
 .arrows:hover {
   cursor:pointer;
+  color: #0000FF;
 
 }
 
@@ -124,4 +162,9 @@ p {
 
 #title {
   line-height:1.8rem;
+}
+
+#shuffle:hover{
+  color: #0000FF;
+  cursor: pointer;
 }
