@@ -73,7 +73,7 @@ p {
 }
 
 .coverImage{
-  max-width:400px;
+  max-width:300px;
   display:none;
   width:100%;
   height:auto;
@@ -114,6 +114,18 @@ p {
   float:right;
 
 
+}
+
+.staticCarousel{
+  max-height:75vh;
+  max-width:120vh;
+  width:auto;
+  display:block;
+  float:right;
+}
+
+.captions{
+  display:none;
 }
 
 #blockCarousel{

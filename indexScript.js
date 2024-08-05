@@ -3,6 +3,7 @@
 
 
 let coverImages=document.getElementsByClassName('coverImage');
+let overlays=document.getElementsByClassName('overlay');
 let startButton=document.getElementById('start');
 let shuffleButton=document.getElementById('shuffle');
 
@@ -32,7 +33,12 @@ if(width<800){
 
 			for(let i=0;i<coverImages.length;i++){
 					coverImages[i].style.display= 'block';
+					coverImages[i].style.maxWidth= '400px';
 					document.getElementById('spacing').style.display ='block';
+				}
+			for(let i=0;i<overlays.length;i++){
+						overlays[i].style.position= 'static';
+						document.getElementById('spacing').style.display ='block';
 				}
 			}
 
