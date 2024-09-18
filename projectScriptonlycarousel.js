@@ -34,7 +34,7 @@
 		//DISPLAY IMAGES BELOW EACHOTHER
 				for(let i=0;i<otherImages.length;i++){
 						otherImages[i].style.display= 'block';
-						captionTexts[i].style.display='block';
+					if(captionTexts.length !=0){	captionTexts[i].style.display='block'; }
 						document.getElementById('spacing').style.display ='block';
 
 					}
