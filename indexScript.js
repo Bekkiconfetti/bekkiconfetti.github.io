@@ -1,52 +1,26 @@
+let weaves=document.getElementsByClassName('weave');
+console.log(weaves);
+let color="black"
+let color2="blue";
 
+for(let i=0;i<weaves.length;i++){
+	let pick=Math.round(Math.random());
+	if(pick==1){
+	weaves[i].style.backgroundColor=color2;
+	
+	}
+	else{
+		weaves[i].style.backgroundColor=color;
+	}
+}
 
+if(window.innerWidth<400){
+	document.body.style.marginTop='160px';
+}
 
-
-let coverImages=document.getElementsByClassName('coverImage');
-let overlays=document.getElementsByClassName('overlay');
-let startButton=document.getElementById('start');
-let shuffleButton=document.getElementById('shuffle');
-
-//SCRAMBLING PROJECTS BEGINNING
-//let startButton=document.getElementById('aboutImage');
-const width  = window.innerWidth || document.documentElement.clientWidth ||
-document.body.clientWidth;
-
-let scramble = function(event){
-			//SCRAMBLE
-					for(let i=0;i<coverImages.length;i++){
-					coverImages[i].style.display= 'block';
-					coverImages[i].style.position='absolute';
-					coverImages[i].style.top= Math.floor(Math.random()* (50 - 8 + 1) + 2)+'%';
-					coverImages[i].style.left=Math.floor(Math.random()* (70 - + 1) )+'%';
-					coverImages[i].style.zIndex=Math.floor(Math.random()*(4-1) + 1);
-/*
-					coverImages[0].style.zIndex=4;
-					coverImages[coverImages.length-3].style.zIndex=4;
-					coverImages[coverImages.length-2].style.zIndex=4;
-					coverImages[coverImages.length-1].style.zIndex=4;
-					*/
-				}
-			}
-
-if(width<800){
-
-			for(let i=0;i<coverImages.length;i++){
-					coverImages[i].style.display= 'block';
-					coverImages[i].style.maxWidth= '400px';
-					document.getElementById('spacing').style.display ='block';
-				}
-			for(let i=0;i<overlays.length;i++){
-						overlays[i].style.position= 'static';
-						document.getElementById('spacing').style.display ='block';
-				}
-			}
-
-else{
-
-			startButton.addEventListener('click',scramble);
-			shuffleButton.addEventListener('click',scramble);
-				window.addEventListener('load',scramble);
-				window.addEventListener('pageshow',scramble);
-
+function getRandomColor() {
+var r = Math.floor(Math.random() * 256); // Random between 0-255
+var g = Math.floor(Math.random() * 256); // Random between 0-255
+var b = Math.floor(Math.random() * 256); // Random between 0-255
+return 'rgb(' + r + ',' + g + ',' + b + ')';
 }
