@@ -69,3 +69,13 @@ p {
   background-color: #000000;
   color:white;
   }
+
+ th, td {
+  border: 0px solid #0000FF;
+}
+
+th, td {
+padding: 2px;
+vertical-align: top;
+font-size: x-small;
+}
